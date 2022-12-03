@@ -8,7 +8,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 
     log("-------------------------------------------------------")
     const args = []
-    const box = await ethers.getContract("Box", {
+    const box = await deploy("Box", {
         from: deployer,
         args: args,
         log: true,
